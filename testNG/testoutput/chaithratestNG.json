@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-18T12:06:25.275Z",
+        "line": 3,
+        "name": "Validate successful Login with Valid Data",
+        "description": "",
+        "id": "test-login-with-valid-case;validate-successful-login-with-valid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9895000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I should be on the Home screen with Login Page",
+            "match": {
+              "location": "StepDefinition.Steps.i_should_be_on_the_home_screen_with_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Enter valid crednetials",
+            "match": {
+              "location": "StepDefinition.Steps.enter_valid_crednetials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5023000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "StepDefinition.Steps.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [Welcome Hansika] but found [Welcome Paul]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:190)\r\n\tat org.testng.Assert.assertEquals(Assert.java:200)\r\n\tat StepDefinition.Steps.login_successful(Steps.java:43)\r\n\tat ✽.Login Successful(file:///C:/Users/ChaithraNK/eclipse-workspace/testNG/src/test/resources/Login/Login.feature:7)\r\n",
+              "duration": 55000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Login Successful",
+            "match": {
+              "location": "StepDefinition.Steps.login_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Test Login with valid case",
+    "description": "",
+    "id": "test-login-with-valid-case",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Login/Login.feature",
+    "tags": []
+  }
+]

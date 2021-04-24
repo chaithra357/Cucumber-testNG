@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.544">
+<testcase classname="Test Login with valid case" name="Validate successful Login with Valid Data" time="15.31">
+<failure message="expected [Welcome Hansika] but found [Welcome Paul]" type="java.lang.AssertionError"><![CDATA[Given I should be on the Home screen with Login Page........................passed
+When Enter valid crednetials................................................passed
+And I click on the Login button.............................................passed
+Then Login Successful.......................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [Welcome Hansika] but found [Welcome Paul]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at StepDefinition.Steps.login_successful(Steps.java:43)
+	at ✽.Login Successful(file:///C:/Users/ChaithraNK/eclipse-workspace/testNG/src/test/resources/Login/Login.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
